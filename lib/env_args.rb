@@ -1,3 +1,7 @@
+require 'date'
+require 'active_support'
+require 'active_support/core_ext/string/conversions'
+
 module EnvArgs
   def self.to(default = nil)
     __fetch__('TO', required: true) { default }
